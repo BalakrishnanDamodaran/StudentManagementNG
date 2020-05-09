@@ -1,0 +1,13 @@
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+    <label for="Name">Course Name</label>
+     <input type="text" formControlName="Name" class="form-control">
+     <!-- <br>
+     <label for="Name">Fees</label>
+     <input type="number" formControlName="Fees" class="form-control">
+     <br>
+     <label for="Name">Duration</label>
+     <input type="text" formControlName="Duration" class="form-control">
+      -->
+      <button class="btn btn-success" type="submit">Submit</button>
+     </form>

@@ -1,0 +1,24 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Course Name</th>
+        <th scope="col">Fees</th>
+        <th scope="col">Duration</th>
+
+        <th scope="col">Tutor</th>
+
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of courses | async">
+        <td scope="row">{{item.Id}}</td>
+        <td>{{item.Name}}</td>
+        <td>{{item.Fees}}</td>
+        <td>{{item.Duration}}</td>
+        <td>{{item.Tutor}}</td>
+        <!-- <td><button class="btn btn-success" (click)="Delete('item.value')">Delete</button></td> -->
+      </tr>
+      
+    </tbody>
+  </table>
