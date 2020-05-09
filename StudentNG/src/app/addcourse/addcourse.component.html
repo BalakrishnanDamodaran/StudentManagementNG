@@ -1,13 +1,23 @@
-
+<style>
+  .form-control{
+    width: 25%;
+  }
+  .content{
+    margin-left: 20%;
+  }
+</style>
+<div class="content">
   <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
     <label for="Name">Course Name</label>
      <input type="text" formControlName="Name" class="form-control">
-     <!-- <br>
+      <br>
      <label for="Name">Fees</label>
      <input type="number" formControlName="Fees" class="form-control">
      <br>
      <label for="Name">Duration</label>
      <input type="text" formControlName="Duration" class="form-control">
-      -->
+    <br>
       <button class="btn btn-success" type="submit">Submit</button>
      </form>
+     <br>
+    </div>
